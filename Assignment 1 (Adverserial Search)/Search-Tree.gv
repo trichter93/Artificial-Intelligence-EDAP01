@@ -1,0 +1,651 @@
+// A search tree
+digraph "Search-Tree" {
+	0 [label="id : 0
+ parent : -1
+ operator sequence : []
+ path cost : 0
+ state : 
+ [[ 0  0  0  0  0  0  0]
+ [ 0  0  0  0  0  0  0]
+ [ 0  0  0  0  0  0  0]
+ [-1  0  0  1  0  0  0]
+ [-1  0  0  1  0  0  0]
+ [-1  0  0  1  0  0  0]]"]
+	1 [label="id : 1, eval : 161 
+ operator : 0
+ parent : 0
+ operator sequence : [0]
+ path cost : 10
+ state : 
+ [[ 0  0  0  0  0  0  0]
+ [ 0  0  0  0  0  0  0]
+ [ 1  0  0  0  0  0  0]
+ [-1  0  0  1  0  0  0]
+ [-1  0  0  1  0  0  0]
+ [-1  0  0  1  0  0  0]]"]
+	0 -> 1
+	2 [label="id : 2, eval : 157 
+ operator : 0
+ parent : 1
+ operator sequence : [0, 0]
+ path cost : 20
+ state : 
+ [[ 0  0  0  0  0  0  0]
+ [-1  0  0  0  0  0  0]
+ [ 1  0  0  0  0  0  0]
+ [-1  0  0  1  0  0  0]
+ [-1  0  0  1  0  0  0]
+ [-1  0  0  1  0  0  0]]"]
+	1 -> 2
+	3 [label="id : 3, eval : 157 
+ operator : 1
+ parent : 1
+ operator sequence : [0, 1]
+ path cost : 20
+ state : 
+ [[ 0  0  0  0  0  0  0]
+ [ 0  0  0  0  0  0  0]
+ [ 1  0  0  0  0  0  0]
+ [-1  0  0  1  0  0  0]
+ [-1  0  0  1  0  0  0]
+ [-1 -1  0  1  0  0  0]]"]
+	1 -> 3
+	4 [label="id : 4, eval : 156 
+ operator : 2
+ parent : 1
+ operator sequence : [0, 2]
+ path cost : 20
+ state : 
+ [[ 0  0  0  0  0  0  0]
+ [ 0  0  0  0  0  0  0]
+ [ 1  0  0  0  0  0  0]
+ [-1  0  0  1  0  0  0]
+ [-1  0  0  1  0  0  0]
+ [-1  0 -1  1  0  0  0]]"]
+	1 -> 4
+	5 [label="id : 5, eval : 148 
+ operator : 3
+ parent : 1
+ operator sequence : [0, 3]
+ path cost : 20
+ state : 
+ [[ 0  0  0  0  0  0  0]
+ [ 0  0  0  0  0  0  0]
+ [ 1  0  0 -1  0  0  0]
+ [-1  0  0  1  0  0  0]
+ [-1  0  0  1  0  0  0]
+ [-1  0  0  1  0  0  0]]"]
+	1 -> 5
+	6 [label="id : 6, eval : 156 
+ operator : 4
+ parent : 1
+ operator sequence : [0, 4]
+ path cost : 20
+ state : 
+ [[ 0  0  0  0  0  0  0]
+ [ 0  0  0  0  0  0  0]
+ [ 1  0  0  0  0  0  0]
+ [-1  0  0  1  0  0  0]
+ [-1  0  0  1  0  0  0]
+ [-1  0  0  1 -1  0  0]]"]
+	1 -> 6
+	7 [label="id : 7, eval : 157 
+ operator : 5
+ parent : 1
+ operator sequence : [0, 5]
+ path cost : 20
+ state : 
+ [[ 0  0  0  0  0  0  0]
+ [ 0  0  0  0  0  0  0]
+ [ 1  0  0  0  0  0  0]
+ [-1  0  0  1  0  0  0]
+ [-1  0  0  1  0  0  0]
+ [-1  0  0  1  0 -1  0]]"]
+	1 -> 7
+	8 [label="id : 8, eval : 158 
+ operator : 6
+ parent : 1
+ operator sequence : [0, 6]
+ path cost : 20
+ state : 
+ [[ 0  0  0  0  0  0  0]
+ [ 0  0  0  0  0  0  0]
+ [ 1  0  0  0  0  0  0]
+ [-1  0  0  1  0  0  0]
+ [-1  0  0  1  0  0  0]
+ [-1  0  0  1  0  0 -1]]"]
+	1 -> 8
+	9 [label="id : 9, eval : 160 
+ operator : 1
+ parent : 0
+ operator sequence : [1]
+ path cost : 10
+ state : 
+ [[ 0  0  0  0  0  0  0]
+ [ 0  0  0  0  0  0  0]
+ [ 0  0  0  0  0  0  0]
+ [-1  0  0  1  0  0  0]
+ [-1  0  0  1  0  0  0]
+ [-1  1  0  1  0  0  0]]"]
+	0 -> 9
+	10 [label="id : 10, eval : 155 
+ operator : 0
+ parent : 9
+ operator sequence : [1, 0]
+ path cost : 20
+ state : 
+ [[ 0  0  0  0  0  0  0]
+ [ 0  0  0  0  0  0  0]
+ [-1  0  0  0  0  0  0]
+ [-1  0  0  1  0  0  0]
+ [-1  0  0  1  0  0  0]
+ [-1  1  0  1  0  0  0]]"]
+	9 -> 10
+	11 [label="id : 11, eval : 154 
+ operator : 1
+ parent : 9
+ operator sequence : [1, 1]
+ path cost : 20
+ state : 
+ [[ 0  0  0  0  0  0  0]
+ [ 0  0  0  0  0  0  0]
+ [ 0  0  0  0  0  0  0]
+ [-1  0  0  1  0  0  0]
+ [-1 -1  0  1  0  0  0]
+ [-1  1  0  1  0  0  0]]"]
+	9 -> 11
+	12 [label="id : 12, eval : 155 
+ operator : 2
+ parent : 9
+ operator sequence : [1, 2]
+ path cost : 20
+ state : 
+ [[ 0  0  0  0  0  0  0]
+ [ 0  0  0  0  0  0  0]
+ [ 0  0  0  0  0  0  0]
+ [-1  0  0  1  0  0  0]
+ [-1  0  0  1  0  0  0]
+ [-1  1 -1  1  0  0  0]]"]
+	9 -> 12
+	13 [label="id : 13, eval : 147 
+ operator : 3
+ parent : 9
+ operator sequence : [1, 3]
+ path cost : 20
+ state : 
+ [[ 0  0  0  0  0  0  0]
+ [ 0  0  0  0  0  0  0]
+ [ 0  0  0 -1  0  0  0]
+ [-1  0  0  1  0  0  0]
+ [-1  0  0  1  0  0  0]
+ [-1  1  0  1  0  0  0]]"]
+	9 -> 13
+	14 [label="id : 14, eval : 155 
+ operator : 4
+ parent : 9
+ operator sequence : [1, 4]
+ path cost : 20
+ state : 
+ [[ 0  0  0  0  0  0  0]
+ [ 0  0  0  0  0  0  0]
+ [ 0  0  0  0  0  0  0]
+ [-1  0  0  1  0  0  0]
+ [-1  0  0  1  0  0  0]
+ [-1  1  0  1 -1  0  0]]"]
+	9 -> 14
+	15 [label="id : 15, eval : 156 
+ operator : 5
+ parent : 9
+ operator sequence : [1, 5]
+ path cost : 20
+ state : 
+ [[ 0  0  0  0  0  0  0]
+ [ 0  0  0  0  0  0  0]
+ [ 0  0  0  0  0  0  0]
+ [-1  0  0  1  0  0  0]
+ [-1  0  0  1  0  0  0]
+ [-1  1  0  1  0 -1  0]]"]
+	9 -> 15
+	16 [label="id : 16, eval : 157 
+ operator : 6
+ parent : 9
+ operator sequence : [1, 6]
+ path cost : 20
+ state : 
+ [[ 0  0  0  0  0  0  0]
+ [ 0  0  0  0  0  0  0]
+ [ 0  0  0  0  0  0  0]
+ [-1  0  0  1  0  0  0]
+ [-1  0  0  1  0  0  0]
+ [-1  1  0  1  0  0 -1]]"]
+	9 -> 16
+	17 [label="id : 17, eval : 161 
+ operator : 2
+ parent : 0
+ operator sequence : [2]
+ path cost : 10
+ state : 
+ [[ 0  0  0  0  0  0  0]
+ [ 0  0  0  0  0  0  0]
+ [ 0  0  0  0  0  0  0]
+ [-1  0  0  1  0  0  0]
+ [-1  0  0  1  0  0  0]
+ [-1  0  1  1  0  0  0]]"]
+	0 -> 17
+	18 [label="id : 18, eval : 156 
+ operator : 0
+ parent : 17
+ operator sequence : [2, 0]
+ path cost : 20
+ state : 
+ [[ 0  0  0  0  0  0  0]
+ [ 0  0  0  0  0  0  0]
+ [-1  0  0  0  0  0  0]
+ [-1  0  0  1  0  0  0]
+ [-1  0  0  1  0  0  0]
+ [-1  0  1  1  0  0  0]]"]
+	17 -> 18
+	19 [label="id : 19, eval : 157 
+ operator : 1
+ parent : 17
+ operator sequence : [2, 1]
+ path cost : 20
+ state : 
+ [[ 0  0  0  0  0  0  0]
+ [ 0  0  0  0  0  0  0]
+ [ 0  0  0  0  0  0  0]
+ [-1  0  0  1  0  0  0]
+ [-1  0  0  1  0  0  0]
+ [-1 -1  1  1  0  0  0]]"]
+	17 -> 19
+	20 [label="id : 20, eval : 153 
+ operator : 2
+ parent : 17
+ operator sequence : [2, 2]
+ path cost : 20
+ state : 
+ [[ 0  0  0  0  0  0  0]
+ [ 0  0  0  0  0  0  0]
+ [ 0  0  0  0  0  0  0]
+ [-1  0  0  1  0  0  0]
+ [-1  0 -1  1  0  0  0]
+ [-1  0  1  1  0  0  0]]"]
+	17 -> 20
+	21 [label="id : 21, eval : 148 
+ operator : 3
+ parent : 17
+ operator sequence : [2, 3]
+ path cost : 20
+ state : 
+ [[ 0  0  0  0  0  0  0]
+ [ 0  0  0  0  0  0  0]
+ [ 0  0  0 -1  0  0  0]
+ [-1  0  0  1  0  0  0]
+ [-1  0  0  1  0  0  0]
+ [-1  0  1  1  0  0  0]]"]
+	17 -> 21
+	22 [label="id : 22, eval : 156 
+ operator : 4
+ parent : 17
+ operator sequence : [2, 4]
+ path cost : 20
+ state : 
+ [[ 0  0  0  0  0  0  0]
+ [ 0  0  0  0  0  0  0]
+ [ 0  0  0  0  0  0  0]
+ [-1  0  0  1  0  0  0]
+ [-1  0  0  1  0  0  0]
+ [-1  0  1  1 -1  0  0]]"]
+	17 -> 22
+	23 [label="id : 23, eval : 157 
+ operator : 5
+ parent : 17
+ operator sequence : [2, 5]
+ path cost : 20
+ state : 
+ [[ 0  0  0  0  0  0  0]
+ [ 0  0  0  0  0  0  0]
+ [ 0  0  0  0  0  0  0]
+ [-1  0  0  1  0  0  0]
+ [-1  0  0  1  0  0  0]
+ [-1  0  1  1  0 -1  0]]"]
+	17 -> 23
+	24 [label="id : 24, eval : 158 
+ operator : 6
+ parent : 17
+ operator sequence : [2, 6]
+ path cost : 20
+ state : 
+ [[ 0  0  0  0  0  0  0]
+ [ 0  0  0  0  0  0  0]
+ [ 0  0  0  0  0  0  0]
+ [-1  0  0  1  0  0  0]
+ [-1  0  0  1  0  0  0]
+ [-1  0  1  1  0  0 -1]]"]
+	17 -> 24
+	25 [label="id : 25, eval : 169 
+ operator : 3
+ parent : 0
+ operator sequence : [3]
+ path cost : 10
+ state : 
+ [[ 0  0  0  0  0  0  0]
+ [ 0  0  0  0  0  0  0]
+ [ 0  0  0  1  0  0  0]
+ [-1  0  0  1  0  0  0]
+ [-1  0  0  1  0  0  0]
+ [-1  0  0  1  0  0  0]]"]
+	0 -> 25
+	26 [label="id : 26, eval : 161 
+ operator : 4
+ parent : 0
+ operator sequence : [4]
+ path cost : 10
+ state : 
+ [[ 0  0  0  0  0  0  0]
+ [ 0  0  0  0  0  0  0]
+ [ 0  0  0  0  0  0  0]
+ [-1  0  0  1  0  0  0]
+ [-1  0  0  1  0  0  0]
+ [-1  0  0  1  1  0  0]]"]
+	0 -> 26
+	27 [label="id : 27, eval : 156 
+ operator : 0
+ parent : 26
+ operator sequence : [4, 0]
+ path cost : 20
+ state : 
+ [[ 0  0  0  0  0  0  0]
+ [ 0  0  0  0  0  0  0]
+ [-1  0  0  0  0  0  0]
+ [-1  0  0  1  0  0  0]
+ [-1  0  0  1  0  0  0]
+ [-1  0  0  1  1  0  0]]"]
+	26 -> 27
+	28 [label="id : 28, eval : 157 
+ operator : 1
+ parent : 26
+ operator sequence : [4, 1]
+ path cost : 20
+ state : 
+ [[ 0  0  0  0  0  0  0]
+ [ 0  0  0  0  0  0  0]
+ [ 0  0  0  0  0  0  0]
+ [-1  0  0  1  0  0  0]
+ [-1  0  0  1  0  0  0]
+ [-1 -1  0  1  1  0  0]]"]
+	26 -> 28
+	29 [label="id : 29, eval : 156 
+ operator : 2
+ parent : 26
+ operator sequence : [4, 2]
+ path cost : 20
+ state : 
+ [[ 0  0  0  0  0  0  0]
+ [ 0  0  0  0  0  0  0]
+ [ 0  0  0  0  0  0  0]
+ [-1  0  0  1  0  0  0]
+ [-1  0  0  1  0  0  0]
+ [-1  0 -1  1  1  0  0]]"]
+	26 -> 29
+	30 [label="id : 30, eval : 148 
+ operator : 3
+ parent : 26
+ operator sequence : [4, 3]
+ path cost : 20
+ state : 
+ [[ 0  0  0  0  0  0  0]
+ [ 0  0  0  0  0  0  0]
+ [ 0  0  0 -1  0  0  0]
+ [-1  0  0  1  0  0  0]
+ [-1  0  0  1  0  0  0]
+ [-1  0  0  1  1  0  0]]"]
+	26 -> 30
+	31 [label="id : 31, eval : 153 
+ operator : 4
+ parent : 26
+ operator sequence : [4, 4]
+ path cost : 20
+ state : 
+ [[ 0  0  0  0  0  0  0]
+ [ 0  0  0  0  0  0  0]
+ [ 0  0  0  0  0  0  0]
+ [-1  0  0  1  0  0  0]
+ [-1  0  0  1 -1  0  0]
+ [-1  0  0  1  1  0  0]]"]
+	26 -> 31
+	32 [label="id : 32, eval : 157 
+ operator : 5
+ parent : 26
+ operator sequence : [4, 5]
+ path cost : 20
+ state : 
+ [[ 0  0  0  0  0  0  0]
+ [ 0  0  0  0  0  0  0]
+ [ 0  0  0  0  0  0  0]
+ [-1  0  0  1  0  0  0]
+ [-1  0  0  1  0  0  0]
+ [-1  0  0  1  1 -1  0]]"]
+	26 -> 32
+	33 [label="id : 33, eval : 158 
+ operator : 6
+ parent : 26
+ operator sequence : [4, 6]
+ path cost : 20
+ state : 
+ [[ 0  0  0  0  0  0  0]
+ [ 0  0  0  0  0  0  0]
+ [ 0  0  0  0  0  0  0]
+ [-1  0  0  1  0  0  0]
+ [-1  0  0  1  0  0  0]
+ [-1  0  0  1  1  0 -1]]"]
+	26 -> 33
+	34 [label="id : 34, eval : 160 
+ operator : 5
+ parent : 0
+ operator sequence : [5]
+ path cost : 10
+ state : 
+ [[ 0  0  0  0  0  0  0]
+ [ 0  0  0  0  0  0  0]
+ [ 0  0  0  0  0  0  0]
+ [-1  0  0  1  0  0  0]
+ [-1  0  0  1  0  0  0]
+ [-1  0  0  1  0  1  0]]"]
+	0 -> 34
+	35 [label="id : 35, eval : 155 
+ operator : 0
+ parent : 34
+ operator sequence : [5, 0]
+ path cost : 20
+ state : 
+ [[ 0  0  0  0  0  0  0]
+ [ 0  0  0  0  0  0  0]
+ [-1  0  0  0  0  0  0]
+ [-1  0  0  1  0  0  0]
+ [-1  0  0  1  0  0  0]
+ [-1  0  0  1  0  1  0]]"]
+	34 -> 35
+	36 [label="id : 36, eval : 156 
+ operator : 1
+ parent : 34
+ operator sequence : [5, 1]
+ path cost : 20
+ state : 
+ [[ 0  0  0  0  0  0  0]
+ [ 0  0  0  0  0  0  0]
+ [ 0  0  0  0  0  0  0]
+ [-1  0  0  1  0  0  0]
+ [-1  0  0  1  0  0  0]
+ [-1 -1  0  1  0  1  0]]"]
+	34 -> 36
+	37 [label="id : 37, eval : 155 
+ operator : 2
+ parent : 34
+ operator sequence : [5, 2]
+ path cost : 20
+ state : 
+ [[ 0  0  0  0  0  0  0]
+ [ 0  0  0  0  0  0  0]
+ [ 0  0  0  0  0  0  0]
+ [-1  0  0  1  0  0  0]
+ [-1  0  0  1  0  0  0]
+ [-1  0 -1  1  0  1  0]]"]
+	34 -> 37
+	38 [label="id : 38, eval : 147 
+ operator : 3
+ parent : 34
+ operator sequence : [5, 3]
+ path cost : 20
+ state : 
+ [[ 0  0  0  0  0  0  0]
+ [ 0  0  0  0  0  0  0]
+ [ 0  0  0 -1  0  0  0]
+ [-1  0  0  1  0  0  0]
+ [-1  0  0  1  0  0  0]
+ [-1  0  0  1  0  1  0]]"]
+	34 -> 38
+	39 [label="id : 39, eval : 155 
+ operator : 4
+ parent : 34
+ operator sequence : [5, 4]
+ path cost : 20
+ state : 
+ [[ 0  0  0  0  0  0  0]
+ [ 0  0  0  0  0  0  0]
+ [ 0  0  0  0  0  0  0]
+ [-1  0  0  1  0  0  0]
+ [-1  0  0  1  0  0  0]
+ [-1  0  0  1 -1  1  0]]"]
+	34 -> 39
+	40 [label="id : 40, eval : 154 
+ operator : 5
+ parent : 34
+ operator sequence : [5, 5]
+ path cost : 20
+ state : 
+ [[ 0  0  0  0  0  0  0]
+ [ 0  0  0  0  0  0  0]
+ [ 0  0  0  0  0  0  0]
+ [-1  0  0  1  0  0  0]
+ [-1  0  0  1  0 -1  0]
+ [-1  0  0  1  0  1  0]]"]
+	34 -> 40
+	41 [label="id : 41, eval : 157 
+ operator : 6
+ parent : 34
+ operator sequence : [5, 6]
+ path cost : 20
+ state : 
+ [[ 0  0  0  0  0  0  0]
+ [ 0  0  0  0  0  0  0]
+ [ 0  0  0  0  0  0  0]
+ [-1  0  0  1  0  0  0]
+ [-1  0  0  1  0  0  0]
+ [-1  0  0  1  0  1 -1]]"]
+	34 -> 41
+	42 [label="id : 42, eval : 159 
+ operator : 6
+ parent : 0
+ operator sequence : [6]
+ path cost : 10
+ state : 
+ [[ 0  0  0  0  0  0  0]
+ [ 0  0  0  0  0  0  0]
+ [ 0  0  0  0  0  0  0]
+ [-1  0  0  1  0  0  0]
+ [-1  0  0  1  0  0  0]
+ [-1  0  0  1  0  0  1]]"]
+	0 -> 42
+	43 [label="id : 43, eval : 154 
+ operator : 0
+ parent : 42
+ operator sequence : [6, 0]
+ path cost : 20
+ state : 
+ [[ 0  0  0  0  0  0  0]
+ [ 0  0  0  0  0  0  0]
+ [-1  0  0  0  0  0  0]
+ [-1  0  0  1  0  0  0]
+ [-1  0  0  1  0  0  0]
+ [-1  0  0  1  0  0  1]]"]
+	42 -> 43
+	44 [label="id : 44, eval : 155 
+ operator : 1
+ parent : 42
+ operator sequence : [6, 1]
+ path cost : 20
+ state : 
+ [[ 0  0  0  0  0  0  0]
+ [ 0  0  0  0  0  0  0]
+ [ 0  0  0  0  0  0  0]
+ [-1  0  0  1  0  0  0]
+ [-1  0  0  1  0  0  0]
+ [-1 -1  0  1  0  0  1]]"]
+	42 -> 44
+	45 [label="id : 45, eval : 154 
+ operator : 2
+ parent : 42
+ operator sequence : [6, 2]
+ path cost : 20
+ state : 
+ [[ 0  0  0  0  0  0  0]
+ [ 0  0  0  0  0  0  0]
+ [ 0  0  0  0  0  0  0]
+ [-1  0  0  1  0  0  0]
+ [-1  0  0  1  0  0  0]
+ [-1  0 -1  1  0  0  1]]"]
+	42 -> 45
+	46 [label="id : 46, eval : 146 
+ operator : 3
+ parent : 42
+ operator sequence : [6, 3]
+ path cost : 20
+ state : 
+ [[ 0  0  0  0  0  0  0]
+ [ 0  0  0  0  0  0  0]
+ [ 0  0  0 -1  0  0  0]
+ [-1  0  0  1  0  0  0]
+ [-1  0  0  1  0  0  0]
+ [-1  0  0  1  0  0  1]]"]
+	42 -> 46
+	47 [label="id : 47, eval : 154 
+ operator : 4
+ parent : 42
+ operator sequence : [6, 4]
+ path cost : 20
+ state : 
+ [[ 0  0  0  0  0  0  0]
+ [ 0  0  0  0  0  0  0]
+ [ 0  0  0  0  0  0  0]
+ [-1  0  0  1  0  0  0]
+ [-1  0  0  1  0  0  0]
+ [-1  0  0  1 -1  0  1]]"]
+	42 -> 47
+	48 [label="id : 48, eval : 155 
+ operator : 5
+ parent : 42
+ operator sequence : [6, 5]
+ path cost : 20
+ state : 
+ [[ 0  0  0  0  0  0  0]
+ [ 0  0  0  0  0  0  0]
+ [ 0  0  0  0  0  0  0]
+ [-1  0  0  1  0  0  0]
+ [-1  0  0  1  0  0  0]
+ [-1  0  0  1  0 -1  1]]"]
+	42 -> 48
+	49 [label="id : 49, eval : 155 
+ operator : 6
+ parent : 42
+ operator sequence : [6, 6]
+ path cost : 20
+ state : 
+ [[ 0  0  0  0  0  0  0]
+ [ 0  0  0  0  0  0  0]
+ [ 0  0  0  0  0  0  0]
+ [-1  0  0  1  0  0  0]
+ [-1  0  0  1  0  0 -1]
+ [-1  0  0  1  0  0  1]]"]
+	42 -> 49
+}
